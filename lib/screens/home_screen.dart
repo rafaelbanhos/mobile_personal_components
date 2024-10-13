@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mobile_personal_components/screens/health_insurance_screen.dart';
 import 'package:mobile_personal_components/utils/button_type.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -37,9 +38,9 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 GestureDetector(
                     child: ButtonType(
-                        Icons.settings_input_component, 'Prudential App'),
+                        Icons.settings_input_component, 'Health Insurance App'),
                     onTap: () async {
-                      //await Get.to(() => PrudentialScreen());
+                      await Get.to(() => HealthInsuranceScreen());
                     }),
                 GestureDetector(
                   child:
